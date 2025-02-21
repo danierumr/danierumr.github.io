@@ -103,8 +103,37 @@ h2 {
     transition: transform 0.3s ease;
 }
 
+.project-grid div {
+    background: var(--light-grey);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    max-width: 450px; /* Increase the width of project cards */  
+    flex: 1 1 calc(33.333% - 1rem); /* Adjust flex properties to fit multiple cards in a row */
+    box-sizing: border-box;
+}
+
+.project-grid div img {
+    width: 100%; /* Ensure the image follows the size of the card */
+    height: auto;
+    border-radius: 5px;
+}
+
 .project-grid div:hover, .skills-grid span:hover {
     transform: scale(1.05);
+}
+
+.project-grid div .tech-used {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* Add spacing between each skill */
+}
+
+.project-grid div .tech-used span {
+    border: 1px solid var(--secondary); /* Add thin border */
+    padding: 0.2rem 0.5rem; /* Add some padding */
+    border-radius: 3px; /* Add slight border radius */
 }
 
 .contact form {
