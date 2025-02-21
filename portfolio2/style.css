@@ -1,0 +1,193 @@
+:root {
+    --primary: #2d3436;
+    --secondary: #636e72;
+    --background: #f5f6fa;
+    --highlight: #00b894;
+    --light-grey: #dfe6e9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--primary);
+    background: var(--background);
+    padding-top: 60px; /* Adjust based on the height of the navbar */
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+}
+
+.lang-toggle span {
+    color: white; /* Ensure separator is visible */
+    margin: 0 0.5rem;
+    line-height: 1.2rem; /* Adjust line height to align with buttons */
+}
+
+.lang-toggle button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    line-height: 1.2rem; /* Adjust line height to align with other elements */
+}
+
+.lang-toggle button:hover {
+    color: var(--highlight);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    color: var(--highlight);
+}
+
+.header-content p {
+    margin-top: 0.5rem;
+}
+
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--highlight);
+    margin-bottom: 1rem;
+}
+
+.project-grid, .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-grid div, .skills-grid span {
+    background: var(--light-grey);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-grid div:hover, .skills-grid span:hover {
+    transform: scale(1.05);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact input, .contact textarea, .contact button {
+    padding: 1rem;
+    border: 1px solid var(--light-grey);
+    border-radius: 5px;
+}
+
+.contact button {
+    background: var(--highlight);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #008f6b; /* Darkened color */
+    color: white; /* Ensure text remains white */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: var(--highlight);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: darken(var(--highlight), 10%);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem; /* Reduced padding */
+    background: var(--light-grey);
+}
+
+.navbar {
+    background: var(--primary);
+    padding: 0.5rem; /* Reduced padding */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem; /* Reduced gap */
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: var(--highlight);
+}
