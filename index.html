@@ -10,7 +10,8 @@
 <body>
     <nav class="navbar">
         <ul class="nav-list">
-            <li><a href="#projects" data-en="Projects" data-pt="Projetos"></a></li>
+            <li class="home-button"><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="projects.html" data-en="Projects" data-pt="Projetos"></a></li>
             <li><a href="#skills" data-en="Skills" data-pt="Habilidades"></a></li>
             <li><a href="#education" data-en="Education" data-pt="Formação"></a></li>
             <li><a href="#contact" data-en="Contact" data-pt="Contato"></a></li>
@@ -33,10 +34,29 @@
         <h2 data-en="Projects" data-pt="Projetos"></h2>
         <div class="project-grid">
             <!-- Repeat for each project -->
-            <div>
+            <div class="card">
+                <img src="images/cl_main.png" alt="Clamor Lycanis">
+                <h3>Clamor Lycanis</h3>
+                <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D."></p>
+                <div class="tech-used">
+                    <span>C++</span>
+                    <span>Unreal Engine 5</span>
+                    <span>Game Design</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/cl_main.png" alt="aVoid">
+                <h3>aVoid</h3>
+                <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D."></p>
+                <div class="tech-used">
+                    <span>GDScript</span>
+                    <span>Godot</span>
+                </div>
+            </div>
+            <div class="card">
                 <img src="images/cce-menu.png" alt="Capybara Combat Experience - CCE">
                 <h3 data-en="Capybara Combat Experience - CCE" data-pt="Capivara Combat Experience - CCE"></h3>
-                <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D." ></p>
+                <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D."></p>
                 <div class="tech-used">
                     <span>C++</span>
                     <span>SDL</span>
@@ -44,19 +64,9 @@
                     <span>Pixel Art</span>
                 </div>
             </div>
-
-            <div>
-                <img src="images/cl_main.png" alt="Clamor Lycanis">
-                <h3>Clamor Lycanis</h3>
-                <p></p>
-                <div class="tech-used">
-                    <span>C++</span>
-                    <span>Unreal Engine 5</span>
-                    <span>Game Design</span>
-                </div>
+            <div class="card">
+                <a href="projects.html" class="view-more-button" data-en="View More Projects" data-pt="Ver Mais Projetos">View More Projects</a>
             </div>
-
-
         </div>
     </section>
 
