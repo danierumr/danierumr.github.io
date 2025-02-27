@@ -3,9 +3,16 @@
     --secondary: #636e72;
     --background: #f5f6fa;
     --highlight: #00b894;
+    --highlight-dark: #008f6b;
     --light-grey: #dfe6e9;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --border-radius: 5px;
+    --max-width: 1200px;
 }
 
+/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,20 +24,36 @@ body {
     line-height: 1.6;
     color: var(--primary);
     background: var(--background);
-    padding-top: 60px; /* Adjust based on the height of the navbar */
+    padding-top: 60px;
 }
 
+/* Navigation */
+.navbar {
+    background: var(--primary);
+    padding: var(--spacing-sm);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: var(--spacing-md);
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+/* Language Toggle */
 .lang-toggle {
+    position: absolute;
+    right: var(--spacing-lg);
     display: flex;
     align-items: center;
-    position: absolute;
-    right: 20px;
-}
-
-.lang-toggle span {
-    color: white; /* Ensure separator is visible */
-    margin: 0 0.5rem;
-    line-height: 1.2rem; /* Adjust line height to align with buttons */
 }
 
 .lang-toggle button {
@@ -40,20 +63,62 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     transition: color 0.3s ease;
-    line-height: 1.2rem; /* Adjust line height to align with other elements */
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-lg);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+/* Card Component */
+.card {
+    background: var(--light-grey);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+    width: 450px;
+    flex: 1 1 calc(33.333% - var(--spacing-md));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}
+
+.lang-toggle span {
+    color: white; /* Ensure separator is visible */
+    margin: 0 0.5rem;
+    line-height: 1.2rem; /* Adjust line height to align with buttons */
 }
 
 .lang-toggle button:hover {
     color: var(--highlight);
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-bottom: 1px solid var(--light-grey);
 }
 
 .profile-img {
@@ -136,20 +201,6 @@ h2 {
     border-radius: 3px; /* Add slight border radius */
 }
 
-.card {
-    background: var(--light-grey);
-    padding: 1rem;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-    width: 450px; /* Increase the width of project cards */  
-    flex: 1 1 calc(33.333% - 1rem); /* Adjust flex properties to fit multiple cards in a row */
-    box-sizing: border-box;
-    display: flex; /* Add flex display */
-    flex-direction: column; /* Arrange children in a column */
-    justify-content: center; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
-}
-
 .card:last-child {
     background: transparent; /* Set background to transparent for the last card */
 }
@@ -158,10 +209,6 @@ h2 {
     width: 100%; /* Ensure the image follows the size of the card */
     height: auto;
     border-radius: 5px;
-}
-
-.card:hover {
-    transform: scale(1.05);
 }
 
 .card .tech-used {
@@ -239,29 +286,6 @@ footer {
     text-align: center;
     padding: 1rem; /* Reduced padding */
     background: var(--light-grey);
-}
-
-.navbar {
-    background: var(--primary);
-    padding: 0.5rem; /* Reduced padding */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 1rem; /* Reduced gap */
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
 }
 
 .nav-list .home-button {

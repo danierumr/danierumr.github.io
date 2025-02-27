@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daniel M. Rosado - Game Developer Portfolio">
+    <meta property="og:title" content="Daniel M. Rosado - Game Developer">
+    <meta property="og:description" content="Portfolio of game development projects and skills">
+    <meta property="og:type" content="website">
     <title>Daniel - Game Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
         <ul class="nav-list">
             <li class="home-button"><a href="index.html"><i class="fas fa-home"></i></a></li>
             <li><a href="projects.html" data-en="Projects" data-pt="Projetos"></a></li>
@@ -21,83 +25,85 @@
         </ul>
     </nav>
 
-    <header class="header">
-        <img src="images/profile.jpeg" alt="Daniel" class="profile-img">
-        <div class="header-content">
-            <h1 class="name">Daniel M. Rosado</h1>
-            <p class="degree" data-en="Computer Scientist" data-pt="Cientista da Computação"></p>
-            <p class="bio" data-en="Game developer passionate about creating immersive experiences..." data-pt="Desenvolvedor de jogos apaixonado por criar experiências imersivas..."></p>
-        </div>
-    </header>
+    <main>
+        <header class="header">
+            <img src="images/profile.jpeg" alt="Daniel M. Rosado" class="profile-img" loading="lazy">
+            <div class="header-content">
+                <h1 class="name">Daniel M. Rosado</h1>
+                <p class="degree" data-en="Computer Scientist" data-pt="Cientista da Computação"></p>
+                <p class="bio" data-en="Game developer passionate about creating immersive experiences..." data-pt="Desenvolvedor de jogos apaixonado por criar experiências imersivas..."></p>
+            </div>
+        </header>
 
-    <section class="projects">
-        <h2 data-en="Projects" data-pt="Projetos"></h2>
-        <div class="project-grid">
-            <!-- Repeat for each project -->
-            <div class="card">
-                <img src="images/cl_main.png" alt="Clamor Lycanis">
-                <h3>Clamor Lycanis</h3>
-                <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D."></p>
-                <div class="tech-used">
-                    <span>C++</span>
-                    <span>Unreal Engine 5</span>
-                    <span>Game Design</span>
+        <section class="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title" data-en="Projects" data-pt="Projetos"></h2>
+            <div class="project-grid">
+                <!-- Repeat for each project -->
+                <div class="card">
+                    <img src="images/cl_main.png" alt="Clamor Lycanis">
+                    <h3>Clamor Lycanis</h3>
+                    <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D."></p>
+                    <div class="tech-used">
+                        <span>C++</span>
+                        <span>Unreal Engine 5</span>
+                        <span>Game Design</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/cl_main.png" alt="aVoid">
+                    <h3>aVoid</h3>
+                    <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D."></p>
+                    <div class="tech-used">
+                        <span>GDScript</span>
+                        <span>Godot</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/cce-menu.png" alt="Capybara Combat Experience - CCE">
+                    <h3 data-en="Capybara Combat Experience - CCE" data-pt="Capivara Combat Experience - CCE"></h3>
+                    <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D."></p>
+                    <div class="tech-used">
+                        <span>C++</span>
+                        <span>SDL</span>
+                        <span>Game Design</span>
+                        <span>Pixel Art</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="projects.html" class="view-more-button" data-en="View More Projects" data-pt="Ver Mais Projetos">View More Projects</a>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/cl_main.png" alt="aVoid">
-                <h3>aVoid</h3>
-                <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D."></p>
-                <div class="tech-used">
-                    <span>GDScript</span>
-                    <span>Godot</span>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/cce-menu.png" alt="Capybara Combat Experience - CCE">
-                <h3 data-en="Capybara Combat Experience - CCE" data-pt="Capivara Combat Experience - CCE"></h3>
-                <p data-en="CCE is a Beat'em up game set in a university environment, inspired by the culture and symbolism of UFV and the Computer Science course. Developed as part of the INF 216 - Design And Implementation Of Digital Games course in the second semester of 2023, the game was created by me, Gabriel Campos Moreira Fernandes, and Cícero Cipriano Maciel. The game targets fans of the Beat'em up genre and classic 2D action games." data-pt="Capivara Combat Experience - CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte do curso INF 216 - Projeto e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D."></p>
-                <div class="tech-used">
-                    <span>C++</span>
-                    <span>SDL</span>
-                    <span>Game Design</span>
-                    <span>Pixel Art</span>
-                </div>
-            </div>
-            <div class="card">
-                <a href="projects.html" class="view-more-button" data-en="View More Projects" data-pt="Ver Mais Projetos">View More Projects</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="skills">
-        <h2 data-en="Skills" data-pt="Habilidades"></h2>
-        <div class="skills-grid">
-            <span>C++</span>
-            <span>C#</span>
-            <span>Python</span>
-            <span>GDScript</span>
-            <span>Unreal Engine</span>
-            <span>Godot Engine</span>
-            <!-- Add more skills -->
-        </div>
-    </section>
+        <section class="skills">
+            <h2 data-en="Skills" data-pt="Habilidades"></h2>
+            <div class="skills-grid">
+                <span>C++</span>
+                <span>C#</span>
+                <span>Python</span>
+                <span>GDScript</span>
+                <span>Unreal Engine</span>
+                <span>Godot Engine</span>
+                <!-- Add more skills -->
+            </div>
+        </section>
 
-    <section class="education">
-        <h2 data-en="Education" data-pt="Formação"></h2>
-        <p>Universidade Federal de Viçosa</p>
-        <p data-en="Bachelor in Computer Science" data-pt="Bacharelado em Ciência da Computação"></p>
-        <p>2021-2025</p>
-    </section>
+        <section class="education">
+            <h2 data-en="Education" data-pt="Formação"></h2>
+            <p>Universidade Federal de Viçosa</p>
+            <p data-en="Bachelor in Computer Science" data-pt="Bacharelado em Ciência da Computação"></p>
+            <p>2021-2025</p>
+        </section>
 
-    <section class="contact">
-        <h2 data-en="Contact Me" data-pt="Contato"></h2>
-        <form action="https://formspree.io/f/your-email" method="POST">
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" data-en-placeholder="Your message..." data-pt-placeholder="Sua mensagem..." required></textarea>
-            <button type="submit" data-en="Send" data-pt="Enviar"></button>
-        </form>
-    </section>
+        <section class="contact">
+            <h2 data-en="Contact Me" data-pt="Contato"></h2>
+            <form action="https://formspree.io/f/your-email" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" data-en-placeholder="Your message..." data-pt-placeholder="Sua mensagem..." required></textarea>
+                <button type="submit" data-en="Send" data-pt="Enviar"></button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <div class="social-links">

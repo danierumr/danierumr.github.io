@@ -1,23 +1,37 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('[data-en], [data-pt]');
-    const textareas = document.querySelectorAll('textarea');
-    const buttons = document.querySelectorAll('button[type="submit"]');
-    
-    function setLanguage(lang) {
-        elements.forEach(el => {
-            if(el.tagName === 'TEXTAREA') {
-                el.placeholder = el.getAttribute(`data-${lang}-placeholder`);
-            } else if(el.tagName === 'BUTTON') {
-                el.textContent = el.getAttribute(`data-${lang}`);
-            } else {
-                el.textContent = el.getAttribute(`data-${lang}`);
-            }
-        });
-    }
+    const languageButtons = {
+        en: document.getElementById('enBtn'),
+        pt: document.getElementById('ptBtn')
+    };
 
-    document.getElementById('enBtn').addEventListener('click', () => setLanguage('en'));
-    document.getElementById('ptBtn').addEventListener('click', () => setLanguage('pt'));
+    const setLanguage = (lang) => {
+        try {
+            elements.forEach(el => {
+                const content = el.getAttribute(`data-${lang}`);
+                if (el.tagName === 'TEXTAREA') {
+                    el.placeholder = el.getAttribute(`data-${lang}-placeholder`) || '';
+                } else {
+                    el.textContent = content || '';
+                }
+            });
+            localStorage.setItem('preferred-language', lang);
+            
+            // Update active state of language buttons
+            Object.keys(languageButtons).forEach(key => {
+                languageButtons[key].classList.toggle('active', key === lang);
+            });
+        } catch (error) {
+            console.error('Error setting language:', error);
+        }
+    };
 
-    // Set default language to English
-    setLanguage('en');
+    // Event Listeners
+    Object.entries(languageButtons).forEach(([lang, button]) => {
+        button?.addEventListener('click', () => setLanguage(lang));
+    });
+
+    // Set initial language based on localStorage or default to English
+    const savedLanguage = localStorage.getItem('preferred-language');
+    setLanguage(savedLanguage || 'en');
 });
