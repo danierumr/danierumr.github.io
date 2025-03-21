@@ -46,6 +46,7 @@ body {
     margin: 0;
     padding: 0;
     flex-grow: 1;
+    min-height: 20px; /* Set a minimum width for the nav list */
 }
 
 /* Language Toggle */
@@ -77,16 +78,18 @@ body {
 
 /* Card Component */
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
     background: var(--light-grey);
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
     transition: transform 0.3s ease;
     width: 450px;
     flex: 1 1 calc(33.333% - var(--spacing-md));
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+    height: auto; /* Allow the card to adjust to its content */
 }
 
 .card:hover {
@@ -193,6 +196,8 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.5rem; /* Add spacing between each skill */
+    margin-top: auto; /* Push the tech-used section to the bottom */
+    align-items: center; /* Ensure items are centered */
 }
 
 .project-grid div .tech-used span {
@@ -215,7 +220,9 @@ h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.5rem; /* Add spacing between each skill */
+    gap: 0.5rem;
+    margin-top: auto; /* Push the tech-used section to the bottom */
+    align-items: center; /* Ensure items are centered */
 }
 
 .card .tech-used span {
@@ -306,4 +313,53 @@ footer {
 
 .nav-list a:hover {
     color: var(--highlight);
+}
+
+.project-grid div:nth-child(1) {
+    /* Add a link to the first project card */
+    position: relative;
+}
+
+.project-grid div:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: transparent;
+}
+
+.project-grid div:nth-child(2) {
+    /* Add a link to the second project card */
+    position: relative;
+}
+
+.project-grid div:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: transparent;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+    padding: 0.5rem 1rem;
+    background: var(--highlight);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+    background: var(--highlight-dark);
+    transform: scale(1.05);
 }
