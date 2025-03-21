@@ -78,9 +78,10 @@ body {
 
 /* Card Component */
 .card {
+    position: relative; /* Adiciona um contexto de posicionamento */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
     align-items: center;
     background: var(--light-grey);
     padding: var(--spacing-md);
@@ -89,7 +90,8 @@ body {
     width: 450px;
     flex: 1 1 calc(33.333% - var(--spacing-md));
     box-sizing: border-box;
-    height: auto; /* Allow the card to adjust to its content */
+    height: auto; /* Permite que o card ajuste sua altura ao conteúdo */
+    z-index: 0; /* Garante que o card não sobreponha outros elementos */
 }
 
 .card:hover {
@@ -348,6 +350,8 @@ footer {
 }
 
 .project-link {
+    position: relative; /* Garante que o botão esteja no fluxo do layout */
+    z-index: 1; /* Garante que o botão esteja acima de outros elementos */
     display: inline-block;
     margin-top: var(--spacing-sm);
     padding: 0.5rem 1rem;
