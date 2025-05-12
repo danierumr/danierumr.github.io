@@ -68,7 +68,7 @@ export function useProjects() {
         "/cl_main.png",
       ],
       technologies: t("project3.tech").split(", "),
-      url: "https://example.com/clamor-lycanis",
+      url: "",
       year: "2025",
       month: "06",
       role: "Solo developer",
