@@ -12,6 +12,7 @@ export type Project = {
   technologies: string[]
   url?: string
   year: string
+  month: string
   role: string
   team: string
   achievements: string[]
@@ -35,6 +36,7 @@ export function useProjects() {
       technologies: t("project1.tech").split(", "),
       url: "https://github.com/ufv-inf216/projeto-final-cce",
       year: "2023",
+      month: "12",
       role: "Developer",
       team: "3 members",
       achievements: [],
@@ -51,6 +53,7 @@ export function useProjects() {
       technologies: t("project2.tech").split(", "),
       url: "https://example.com/space-explorers",
       year: "2025",
+      month: "02",
       role: "Solo developer",
       team: "",
       achievements: [],
@@ -67,6 +70,7 @@ export function useProjects() {
       technologies: t("project3.tech").split(", "),
       url: "https://example.com/space-explorers",
       year: "2025",
+      month: "06",
       role: "Solo developer",
       team: "",
       achievements: [],
@@ -86,6 +90,12 @@ export function useProject(id: string | null) {
 // Function to get recent projects (for homepage)
 export function useRecentProjects(count = 3) {
   const projects = useProjects()
-  // Sort by year (descending) and take the specified count
-  return [...projects].sort((a, b) => Number.parseInt(b.year) - Number.parseInt(a.year)).slice(0, count)
+  // Sort by year and month (descending) and take the specified count
+  return [...projects]
+    .sort((a, b) => {
+      const dateA = Number.parseInt(a.year) * 100 + Number.parseInt(a.month) // Combine year and month
+      const dateB = Number.parseInt(b.year) * 100 + Number.parseInt(b.month) // Combine year and month
+      return dateB - dateA // Sort in descending order
+    })
+    .slice(0, count)
 }

@@ -21,7 +21,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="container space-y-6">
       <h2 className="text-3xl font-bold tracking-tight">{t("contact.title")}</h2>
-      <p className="text-muted-foreground">{t("contact.description")}</p>
+      {/* <p className="text-muted-foreground">{t("contact.description")}</p> */}
 
       <div className="grid gap-6 md:grid-cols-1">
         {/* <Card className="border border-border/40 shadow-sm">
