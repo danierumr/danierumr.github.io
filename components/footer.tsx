@@ -21,11 +21,11 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex gap-4">
-            <SocialButton href="https://mrdanieru.itch.io/" icon={<img src="/icons/itchio-textless-black.svg" className="h-5 w-5" />} />
+            <SocialButton href="https://mrdanieru.itch.io/" icon={<img src="/icons/itchio-textless-black.svg" className="h-5 w-5" />} isLocalIcon={true} />
             <SocialButton href="https://www.linkedin.com/in/danierumr/" icon={<Linkedin className="h-5 w-5" />} />
             <SocialButton href="https://github.com/danierumr" icon={<Github className="h-5 w-5" />} />
-            <SocialButton href="https://x.com/dmr_838" icon={<img src="/icons/x.svg" alt="X icon" className="h-5 w-5" />} />
-            <SocialButton href="https://threads.net/@mrdanieru" icon={<img src="/icons/threads.svg" alt="Threads icon" className="h-5 w-5" />} />
+            <SocialButton href="https://x.com/dmr_838" icon={<img src="/icons/x.svg" alt="X icon" className="h-5 w-5" />} isLocalIcon={true} />
+            <SocialButton href="https://threads.net/@mrdanieru" icon={<img src="/icons/threads.svg" alt="Threads icon" className="h-5 w-5" />} isLocalIcon={true} />
           </div>
         </div>
       </div>
@@ -33,11 +33,11 @@ export default function Footer() {
   )
 }
 
-function SocialButton({ href, icon }: { href: string; icon: React.ReactNode }) {
+function SocialButton({ href, icon, isLocalIcon = false }: { href: string; icon: React.ReactNode; isLocalIcon?: boolean }) {
   return (
     <Button asChild variant="ghost" size="icon">
       <a href={href} target="_blank" rel="noopener noreferrer">
-        {icon}
+        <div className={`h-5 w-5 ${isLocalIcon ? "dark:invert" : ""}`}>{icon}</div>
       </a>
     </Button>
   )
