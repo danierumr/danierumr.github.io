@@ -48,6 +48,7 @@ export const pt = {
   "projects.achievements": "Conquistas",
   "projects.description": "Descrição",
   "projects.features": "Características",
+  "projects.back": "Voltar para projetos",
 
   // Projeto 1
   "project1.title": "Capybara Combat Experience - CCE",

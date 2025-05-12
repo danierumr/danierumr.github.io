@@ -32,6 +32,9 @@ export function useProjects() {
       fullDescription: t("project1.full_description"),
       images: [
         "/cce-menu.png",
+        "/cce/cce-gameplay-gif.gif",
+        "/cce/capivaristo.gif",
+        "/cce/croc.gif",
       ],
       technologies: t("project1.tech").split(", "),
       url: "https://github.com/ufv-inf216/projeto-final-cce",
@@ -49,6 +52,9 @@ export function useProjects() {
       fullDescription: t("project2.full_description"),
       images: [
         "/aVoid_main.png",
+        "/avoid/avoid1.png",
+        "/avoid/avoid2.png",
+        "/avoid/avoid3.png",
       ],
       technologies: t("project2.tech").split(", "),
       url: "https://mrdanieru.itch.io/avoid",

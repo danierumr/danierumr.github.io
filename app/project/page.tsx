@@ -64,7 +64,7 @@ export default function ProjectPage() {
       <Button variant="ghost" asChild className="mb-6">
         <Link href="/projects" className="flex items-center gap-2">
           <ArrowLeft className="h-4 w-4" />
-          Back to Projects
+          {t("projects.back")}
         </Link>
       </Button>
 
@@ -75,7 +75,7 @@ export default function ProjectPage() {
               src={project.images[0] || "/placeholder.svg"}
               alt={project.title}
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
           </div>
@@ -90,7 +90,7 @@ export default function ProjectPage() {
                   src={image || "/placeholder.svg"}
                   alt={`${project.title} screenshot ${index + 2}`}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             ))}
