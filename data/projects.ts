@@ -1,0 +1,91 @@
+"use client"
+
+import { useLanguage } from "@/components/language-provider"
+
+// Define a type for project data
+export type Project = {
+  id: string
+  title: string
+  shortDescription: string
+  fullDescription: string
+  images: string[]
+  technologies: string[]
+  url?: string
+  year: string
+  role: string
+  team: string
+  achievements: string[]
+  features: string[]
+}
+
+// Function to get all projects with translations
+export function useProjects() {
+  const { t } = useLanguage()
+
+  // Projects data with translations
+  const projects: Project[] = [
+    {
+      id: "cce",
+      title: t("project1.title"),
+      shortDescription: t("project1.description"),
+      fullDescription: t("project1.full_description"),
+      images: [
+        "./cce-menu.png",
+      ],
+      technologies: t("project1.tech").split(", "),
+      url: "https://github.com/ufv-inf216/projeto-final-cce",
+      year: "2023",
+      role: "Developer",
+      team: "3 members",
+      achievements: [],
+      features: t("project1.features").split(", "),
+    },
+    {
+      id: "avoid",
+      title: t("project2.title"),
+      shortDescription: t("project2.description"),
+      fullDescription: t("project2.full_description"),
+      images: [
+        "./aVoid_main.png",
+      ],
+      technologies: t("project2.tech").split(", "),
+      url: "https://example.com/space-explorers",
+      year: "2025",
+      role: "Solo developer",
+      team: "Solo",
+      achievements: [],
+      features: t("project2.features").split(", "),
+    },
+    {
+      id: "clamor-lycanis",
+      title: t("project3.title"),
+      shortDescription: t("project3.description"),
+      fullDescription: t("project3.full_description"),
+      images: [
+        "./cl_main.png",
+      ],
+      technologies: t("project3.tech").split(", "),
+      url: "https://example.com/space-explorers",
+      year: "2025",
+      role: "Solo developer",
+      team: "Solo",
+      achievements: [],
+      features: t("project3.features").split(", "),
+    },
+  ]
+
+  return projects
+}
+
+// Function to get a specific project by ID
+export function useProject(id: string | null) {
+  const projects = useProjects()
+  return projects.find((project) => project.id === id) || null
+}
+
+// Function to get recent projects (for homepage)
+export function useRecentProjects(count = 3) {
+  const projects = useProjects()
+  // Sort by year (descending) and take the specified count
+  return [...projects].sort((a, b) => Number.parseInt(b.year) - Number.parseInt(a.year)).slice(0, count)
+}
