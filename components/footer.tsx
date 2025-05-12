@@ -21,9 +21,10 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex gap-4">
+            <SocialButton href="https://mrdanieru.itch.io/" icon={<img src="/icons/itchio-textless-black.svg" className="h-5 w-5" />} />
+            <SocialButton href="https://www.linkedin.com/in/danierumr/" icon={<Linkedin className="h-5 w-5" />} />
             <SocialButton href="https://github.com/danierumr" icon={<Github className="h-5 w-5" />} />
             <SocialButton href="https://x.com/dmr_838" icon={<img src="/icons/x.svg" alt="X icon" className="h-5 w-5" />} />
-            <SocialButton href="https://www.linkedin.com/in/danierumr/" icon={<Linkedin className="h-5 w-5" />} />
             <SocialButton href="https://threads.net/@mrdanieru" icon={<img src="/icons/threads.svg" alt="Threads icon" className="h-5 w-5" />} />
           </div>
         </div>

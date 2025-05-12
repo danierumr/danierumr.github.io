@@ -50,17 +50,26 @@ export default function ProjectCard({ project, showYear = false }: ProjectCardPr
           ))}
         </div>
 
-        <div className="flex justify-between w-full">
-          <Link href={`/project?id=${project.id}`}>
-            <Button variant={showYear ? "default" : "outline"} size="sm">
+        <div className="flex justify-between w-full gap-2">
+          <Link href={`/project?id=${project.id}`} className="flex-1">
+            <Button
+              variant="default"
+              size="sm"
+              className="border-2 border-primary/20 bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30"
+            >
               {t("projects.viewDetails")}
             </Button>
           </Link>
           {project.url && (
-            <Button asChild size="sm" variant="ghost">
+            <Button
+              asChild
+              size="sm"
+              variant="outline"
+              className="border-2 border-primary/20 hover:bg-primary/10 dark:hover:bg-primary/20"
+            >
               <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1">
                 {t("projects.visitProject")}
-                <ExternalLink className="h-3 w-3" />
+                <ExternalLink className="h-3 w-3 ml-1" />
               </a>
             </Button>
           )}

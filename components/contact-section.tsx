@@ -79,6 +79,18 @@ export default function ContactSection() {
           </CardHeader>
           <CardContent className="space-y-4">
             <SocialLink
+              icon={<img src="/icons/itchio-textless-black.svg" alt="itch.io icon" className="h-5 w-5" />}
+              platform="itch.io"
+              username="Daniel"
+              href="https://mrdanieru.itch.io/"
+            />
+              <SocialLink
+                icon={<Linkedin className="h-5 w-5" />}
+                platform="LinkedIn"
+                username="Daniel Rosado"
+                href="https://www.linkedin.com/in/danierumr/"
+              />
+            <SocialLink
               icon={<Github className="h-5 w-5" />}
               platform="GitHub"
               username="danierumr"
@@ -89,12 +101,6 @@ export default function ContactSection() {
               platform="X"
               username="@dmr_838"
               href="https://x.com/dmr_838"
-            />
-            <SocialLink
-              icon={<Linkedin className="h-5 w-5" />}
-              platform="LinkedIn"
-              username="Daniel Rosado"
-              href="https://www.linkedin.com/in/danierumr/"
             />
             <SocialLink
               icon={<img src="/icons/threads.svg" alt="Threads icon" className="h-5 w-5" />}

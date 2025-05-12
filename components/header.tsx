@@ -7,6 +7,7 @@ import { useLanguage } from "@/components/language-provider"
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Menu, X, Globe } from "lucide-react"
+import { ThemeToggle } from "./theme-toggle"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -42,12 +43,18 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <LanguageSwitcher language={language} setLanguage={setLanguage} />
+          <div className="flex items-center space-x-1">
+            <ThemeToggle />
+            <LanguageSwitcher language={language} setLanguage={setLanguage} />
+          </div>
         </nav>
 
         {/* Mobile Navigation */}
         <div className="flex items-center md:hidden">
-          <LanguageSwitcher language={language} setLanguage={setLanguage} />
+          <div className="flex items-center space-x-1">
+            <ThemeToggle />
+            <LanguageSwitcher language={language} setLanguage={setLanguage} />
+          </div>
           <Button variant="ghost" size="icon" onClick={toggleMenu} className="ml-2">
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
