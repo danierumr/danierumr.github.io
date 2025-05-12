@@ -120,10 +120,12 @@ export default function ProjectPage() {
               <Code className="h-4 w-4 text-muted-foreground" />
               <span>{project.role}</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Users className="h-4 w-4 text-muted-foreground" />
-              <span>Team Size: {project.team}</span>
-            </div>
+            {project.team != "" && (
+              <div className="flex items-center gap-2">
+                <Users className="h-4 w-4 text-muted-foreground" />
+                <span>Team Size: {project.team}</span>
+              </div>
+            )}
             {project.achievements.length > 0 && (
               <div className="flex items-start gap-2">
                 <Trophy className="h-4 w-4 text-muted-foreground mt-1" />
