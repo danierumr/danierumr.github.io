@@ -1,12 +1,12 @@
 "use client"
 
 import { useLanguage } from "@/components/language-provider"
-import { useProjects } from "@/data/projects"
+import { useRecentProjects } from "@/data/projects"
 import ProjectCard from "@/components/project-card"
 
 export default function ProjectsPage() {
   const { t } = useLanguage()
-  const projects = useProjects()
+  const projects = useRecentProjects()
 
   return (
     <div className="container py-8 md:py-12">

@@ -85,7 +85,7 @@ export default function ContactSection() {
               href="https://github.com/danierumr"
             />
             <SocialLink
-              icon={<img src="./icons/x.svg" alt="X icon" className="h-5 w-5" />}
+              icon={<img src="/icons/x.svg" alt="X icon" className="h-5 w-5" />}
               platform="X"
               username="@dmr_838"
               href="https://x.com/dmr_838"
@@ -97,7 +97,7 @@ export default function ContactSection() {
               href="https://www.linkedin.com/in/danierumr/"
             />
             <SocialLink
-              icon={<img src="./icons/threads.svg" alt="Threads icon" className="h-5 w-5" />}
+              icon={<img src="/icons/threads.svg" alt="Threads icon" className="h-5 w-5" />}
               platform="Threads"
               username="@mrdanieru"
               href="https://threads.net/@mrdanieru"

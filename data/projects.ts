@@ -30,7 +30,7 @@ export function useProjects() {
       shortDescription: t("project1.description"),
       fullDescription: t("project1.full_description"),
       images: [
-        "./cce-menu.png",
+        "/cce-menu.png",
       ],
       technologies: t("project1.tech").split(", "),
       url: "https://github.com/ufv-inf216/projeto-final-cce",
@@ -46,7 +46,7 @@ export function useProjects() {
       shortDescription: t("project2.description"),
       fullDescription: t("project2.full_description"),
       images: [
-        "./aVoid_main.png",
+        "/aVoid_main.png",
       ],
       technologies: t("project2.tech").split(", "),
       url: "https://example.com/space-explorers",
@@ -62,7 +62,7 @@ export function useProjects() {
       shortDescription: t("project3.description"),
       fullDescription: t("project3.full_description"),
       images: [
-        "./cl_main.png",
+        "/cl_main.png",
       ],
       technologies: t("project3.tech").split(", "),
       url: "https://example.com/space-explorers",
