@@ -23,8 +23,8 @@ export default function ContactSection() {
       <h2 className="text-3xl font-bold tracking-tight">{t("contact.title")}</h2>
       <p className="text-muted-foreground">{t("contact.description")}</p>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        <Card className="border border-border/40 shadow-sm">
+      <div className="grid gap-6 md:grid-cols-1">
+        {/* <Card className="border border-border/40 shadow-sm">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <div className="rounded-full bg-secondary p-2">
@@ -68,14 +68,14 @@ export default function ContactSection() {
               </Button>
             </form>
           </CardContent>
-        </Card>
+        </Card> */}
 
-        <Card className="border border-border/40 shadow-sm">
+        <Card className="border border-border/120 shadow-sm">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               {t("contact.social")}
             </CardTitle>
-            <CardDescription>Connect with me on social media</CardDescription>
+            <CardDescription>{t("contact.connectwithme")}</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <SocialLink
@@ -83,6 +83,7 @@ export default function ContactSection() {
               platform="itch.io"
               username="Daniel"
               href="https://mrdanieru.itch.io/"
+              isLocalIcon={true}
             />
               <SocialLink
                 icon={<Linkedin className="h-5 w-5" />}
@@ -101,12 +102,14 @@ export default function ContactSection() {
               platform="X"
               username="@dmr_838"
               href="https://x.com/dmr_838"
+              isLocalIcon={true}
             />
             <SocialLink
               icon={<img src="/icons/threads.svg" alt="Threads icon" className="h-5 w-5" />}
               platform="Threads"
               username="@mrdanieru"
               href="https://threads.net/@mrdanieru"
+              isLocalIcon={true}
             />
           </CardContent>
         </Card>
@@ -120,11 +123,13 @@ function SocialLink({
   platform,
   username,
   href,
+  isLocalIcon = false, // New prop to indicate if the icon is local
 }: {
   icon: React.ReactNode
   platform: string
   username: string
   href: string
+  isLocalIcon?: boolean
 }) {
   return (
     <a
@@ -133,7 +138,7 @@ function SocialLink({
       rel="noopener noreferrer"
       className="flex items-center gap-3 rounded-lg border border-border/40 p-3 transition-colors hover:bg-secondary"
     >
-      {icon}
+      <div className={`h-5 w-5 ${isLocalIcon ? "dark:invert" : ""}`}>{icon}</div>
       <div>
         <div className="font-medium">{platform}</div>
         <div className="text-sm text-muted-foreground">{username}</div>

@@ -12,7 +12,7 @@ export default function ProjectsPage() {
     <div className="container py-8 md:py-12">
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">{t("projects.title")}</h1>
-        <p className="text-muted-foreground">A showcase of my game development projects over the years.</p>
+        <p className="text-muted-foreground">{t("projects.showcase")}</p>
       </div>
 
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -28,48 +28,55 @@ export const pt = {
   "skills.tools.photoshop": "Photoshop",
   "skills.tools.git": "Git",
 
-  // Education Section
+  // Seção de Educação
   "education.title": "Educação",
   "education.degree": "Bacharelado em Ciência da Computação",
   "education.university": "Universidade Federal de Viçosa - UFV",
   "education.period": "2021 - 2025",
   "education.course1": "Especialização em Desenvolvimento de Jogos",
   "education.course2": "Certificado em Animação 3D",
-  "education.course3": "Workshop Avançado de Design de Jogos",
+  "education.course3": "Workshop Avançado de Game Design",
+  "education.certifications": "Certificações",
 
-  // Projects Section
+  // Seção de Projetos
   "projects.title": "Projetos Recentes",
   "projects.viewAll": "Ver Todos os Projetos",
   "projects.viewDetails": "Ver Detalhes",
   "projects.visitProject": "Visitar Projeto",
+  "projects.showcase": "Uma vitrine dos meus projetos de desenvolvimento de jogos ao longo dos anos.",
+  "projects.teamsize": "Tamanho da equipe",
+  "projects.achievements": "Conquistas",
+  "projects.description": "Descrição",
+  "projects.features": "Características",
 
-  // Project 1
+  // Projeto 1
   "project1.title": "Capybara Combat Experience - CCE",
-  "project1.description": "CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte da disciplina INF 216 - Design e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes, e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D.",
-  "project1.full_description": "CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e simbolismo da UFV e do curso de Ciência da Computação. Desenvolvido como parte da disciplina INF 216 - Design e Implementação de Jogos Digitais no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes, e Cícero Cipriano Maciel. O jogo é direcionado a fãs do gênero Beat'em up e jogos clássicos de ação 2D.",
+  "project1.description": "CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e nos símbolos da UFV e do curso de Ciência da Computação. Desenvolvido como parte da disciplina INF 216 - Design e Implementação de Jogos Digitais, no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes, e Cícero Cipriano Maciel. O jogo é voltado para fãs do gênero Beat'em up e jogos clássicos de ação 2D.",
+  "project1.full_description": "CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e nos símbolos da UFV e do curso de Ciência da Computação. Desenvolvido como parte da disciplina INF 216 - Design e Implementação de Jogos Digitais, no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes, e Cícero Cipriano Maciel. O jogo é voltado para fãs do gênero Beat'em up e jogos clássicos de ação 2D.",
   "project1.features": "Beat'em Up, Pixel Art, 2.5D",
   "project1.tech": "C++, SDL, Aseprite",
 
-  // Project 2
+  // Projeto 2
   "project2.title": "aVoid",
-  "project2.description": "aVoid é um projeto pessoal que estou desenvolvendo para aprender e experimentar programação e design de jogos. É um jogo de plataforma simples, mas desafiador, com seis níveis (por enquanto). Seu objetivo? Chegar ao portal verde para completar o nível. Mas há um detalhe—toda vez que você termina uma tentativa, seus movimentos anteriores são gravados, criando um vazio que você deve evitar na próxima tentativa. A cada repetição, o desafio aumenta enquanto você planeja cuidadosamente novos caminhos para a vitória. Quantas vezes você consegue evitar a si mesmo?",
-  "project2.full_description": "aVoid é um projeto pessoal que estou desenvolvendo para aprender e experimentar programação e design de jogos. É um jogo de plataforma simples, mas desafiador, com seis níveis (por enquanto). Seu objetivo? Chegar ao portal verde para completar o nível. Mas há um detalhe—toda vez que você termina uma tentativa, seus movimentos anteriores são gravados, criando um vazio que você deve evitar na próxima tentativa. A cada repetição, o desafio aumenta enquanto você planeja cuidadosamente novos caminhos para a vitória. Quantas vezes você consegue evitar a si mesmo?",
-  "project2.features": "2D, Plataforma, Quebra-cabeça",
+  "project2.description": "aVoid é um projeto pessoal que estou desenvolvendo para aprender e experimentar com programação e design de jogos. É um jogo de plataforma simples, mas desafiador, com seis fases (por enquanto). Seu objetivo? Alcançar o portal verde para completar a fase. Mas tem um detalhe — toda vez que você finaliza uma tentativa, seus movimentos anteriores são gravados, criando um vazio que você deve evitar na próxima tentativa. A cada repetição, o desafio aumenta à medida que você precisa planejar cuidadosamente novos caminhos para vencer. Quantas vezes você consegue evitar a si mesmo?",
+  "project2.full_description": "aVoid é um projeto pessoal que estou desenvolvendo para aprender e experimentar com programação e design de jogos. É um jogo de plataforma simples, mas desafiador, com seis fases (por enquanto). Seu objetivo? Alcançar o portal verde para completar a fase. Mas tem um detalhe — toda vez que você finaliza uma tentativa, seus movimentos anteriores são gravados, criando um vazio que você deve evitar na próxima tentativa. A cada repetição, o desafio aumenta à medida que você precisa planejar cuidadosamente novos caminhos para vencer. Quantas vezes você consegue evitar a si mesmo?",
+  "project2.features": "2D, Plataforma, Puzzle",
   "project2.tech": "Godot, GDScript, C#, GIMP",
 
-  // Project 3
+  // Projeto 3
   "project3.title": "Clamor Lycanis",
-  "project3.description": "Clamor Lycanis é um jogo atualmente em desenvolvimento, criado usando Unreal Engine 5 como projeto final para minha graduação em Ciência da Computação. Ele combina elementos de narrativa, mecânicas de jogo e design imersivo para oferecer uma experiência única.",
-  "project3.full_description": "Clamor Lycanis é um jogo atualmente em desenvolvimento, criado usando Unreal Engine 5 como projeto final para minha graduação em Ciência da Computação. Ele combina elementos de narrativa, mecânicas de jogo e design imersivo para oferecer uma experiência única.",
+  "project3.description": "Clamor Lycanis é um jogo atualmente em desenvolvimento, criado utilizando Unreal Engine 5 como projeto final do meu curso de Ciência da Computação. Ele combina elementos de narrativa, mecânicas de jogo e design imersivo para entregar uma experiência única.",
+  "project3.full_description": "Clamor Lycanis é um jogo atualmente em desenvolvimento, criado utilizando Unreal Engine 5 como projeto final do meu curso de Ciência da Computação. Ele combina elementos de narrativa, mecânicas de jogo e design imersivo para entregar uma experiência única.",
   "project3.features": "Primeira pessoa, Terror, Exploração",
   "project3.tech": "Unreal Engine, C++",
 
-  // Contact Section
+  // Seção de Contato
   "contact.title": "Entre em Contato",
-  "contact.description": "Interessado em trabalhar juntos? Sinta-se à vontade para entrar em contato!",
+  "contact.description": "Interessado em trabalhar comigo? Sinta-se à vontade para entrar em contato!",
   "contact.email": "Email",
   "contact.social": "Redes Sociais",
+  "contact.connectwithme": "Conecte-se comigo nas redes sociais",
 
-  // Footer
-  "footer.rights": "Todos os Direitos Reservados",
+  // Rodapé
+  "footer.rights": "Todos os direitos reservados",
 }

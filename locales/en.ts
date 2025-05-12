@@ -36,12 +36,18 @@ export const en = {
   "education.course1": "Game Development Specialization",
   "education.course2": "3D Animation Certificate",
   "education.course3": "Advanced Game Design Workshop",
+  "education.certifications": "Cartifications",
 
   // Projects Section
   "projects.title": "Recent Projects",
   "projects.viewAll": "View All Projects",
   "projects.viewDetails": "View Details",
   "projects.visitProject": "Visit Project",
+  "projects.showcase": "A showcase of my game development projects over the years.",
+  "projects.teamsize":"Team size",
+  "projects.achievements": "Achievements",
+  "projects.description": "Description",
+  "projects.features": "Features",
 
   // Project 1
   "project1.title": "Capybara Combat Experience - CCE",
@@ -70,6 +76,7 @@ export const en = {
   "contact.description": "Interested in working together? Feel free to reach out!",
   "contact.email": "Email",
   "contact.social": "Social Media",
+  "contact.connectwithme": "Connect with me on social media",
 
   // Footer
   "footer.rights": "All Rights Reserved",

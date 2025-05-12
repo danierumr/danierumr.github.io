@@ -123,14 +123,14 @@ export default function ProjectPage() {
             {project.team != "" && (
               <div className="flex items-center gap-2">
                 <Users className="h-4 w-4 text-muted-foreground" />
-                <span>Team Size: {project.team}</span>
+                <span>{t("projects.teamsize")}: {project.team}</span>
               </div>
             )}
             {project.achievements.length > 0 && (
               <div className="flex items-start gap-2">
                 <Trophy className="h-4 w-4 text-muted-foreground mt-1" />
                 <div>
-                  <span className="font-medium">Achievements:</span>
+                  <span className="font-medium">{t("projects.achievements")}:</span>
                   <ul className="list-disc list-inside ml-2">
                     {project.achievements.map((achievement: string, index: number) => (
                       <li key={index} className="text-sm">
@@ -161,8 +161,8 @@ export default function ProjectPage() {
 
       <Tabs defaultValue="description" className="mt-12">
         <TabsList>
-          <TabsTrigger value="description">Description</TabsTrigger>
-          <TabsTrigger value="features">Features</TabsTrigger>
+          <TabsTrigger value="description">{t("projects.description")}</TabsTrigger>
+          <TabsTrigger value="features">{t("projects.features")}</TabsTrigger>
         </TabsList>
         <TabsContent value="description" className="mt-4 space-y-4">
           <p>{project.fullDescription}</p>
