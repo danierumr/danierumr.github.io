@@ -33,7 +33,7 @@ export default function HomePage() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {recentProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <ProjectCard key={project.id} project={project} showDate />
           ))}
         </div>
       </section>

@@ -11,10 +11,10 @@ import type { Project } from "@/data/projects"
 
 interface ProjectCardProps {
   project: Project
-  showYear?: boolean
+  showDate?: boolean
 }
 
-export default function ProjectCard({ project, showYear = false }: ProjectCardProps) {
+export default function ProjectCard({ project, showDate = false }: ProjectCardProps) {
   const { t } = useLanguage()
 
   return (
@@ -26,9 +26,14 @@ export default function ProjectCard({ project, showYear = false }: ProjectCardPr
           fill
           className="object-cover transition-transform hover:scale-105"
         />
-        {showYear && (
+        {showDate && project.year != "" && (
           <div className="absolute top-2 right-2">
-            <Badge variant="secondary">{project.year}</Badge>
+            <Badge variant="secondary">{project.month}/{project.year}</Badge>
+          </div>
+        )}
+        {showDate && project.year == "" && (
+          <div className="absolute top-2 right-2">
+            <Badge variant="secondary">TBD</Badge>
           </div>
         )}
       </div>
@@ -44,7 +49,7 @@ export default function ProjectCard({ project, showYear = false }: ProjectCardPr
       <CardFooter className="flex flex-col gap-4 pt-2">
         <div className="flex flex-wrap gap-2 w-full">
           {project.technologies.map((tech: string) => (
-            <Badge key={tech} variant={showYear ? "outline" : "secondary"}>
+            <Badge key={tech} variant={showDate ? "outline" : "secondary"}>
               {tech}
             </Badge>
           ))}

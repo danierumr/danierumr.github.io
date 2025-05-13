@@ -75,7 +75,7 @@ export function useProjects() {
       ],
       technologies: t("project3.tech").split(", "),
       url: "",
-      year: "2025",
+      year: "",
       month: "06",
       role: "Solo developer",
       team: "",
@@ -96,12 +96,17 @@ export function useProject(id: string | null) {
 // Function to get recent projects (for homepage)
 export function useRecentProjects(count = 3) {
   const projects = useProjects()
-  // Sort by year and month (descending) and take the specified count
+  // Sort by: projects with empty year first, then by year/month descending
   return [...projects]
     .sort((a, b) => {
-      const dateA = Number.parseInt(a.year) * 100 + Number.parseInt(a.month) // Combine year and month
-      const dateB = Number.parseInt(b.year) * 100 + Number.parseInt(b.month) // Combine year and month
-      return dateB - dateA // Sort in descending order
+      // If a.year is empty and b.year is not, a comes first
+      if (a.year === "" && b.year !== "") return -1
+      // If b.year is empty and a.year is not, b comes first
+      if (b.year === "" && a.year !== "") return 1
+      // If both have years, sort by year and month descending
+      const dateA = Number.parseInt(a.year) * 100 + Number.parseInt(a.month)
+      const dateB = Number.parseInt(b.year) * 100 + Number.parseInt(b.month)
+      return dateB - dateA
     })
     .slice(0, count)
 }
