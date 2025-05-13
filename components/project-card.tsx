@@ -18,7 +18,7 @@ export default function ProjectCard({ project, showDate = false }: ProjectCardPr
   const { t } = useLanguage()
 
   return (
-    <Card className="overflow-hidden border border-border/40 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+    <Card className="overflow-hidden border border-border/60 shadow-sm hover:shadow-md transition-shadow flex flex-col">
       <div className="aspect-video relative">
         <Image
           src={project.images[0] || "/placeholder.svg"}

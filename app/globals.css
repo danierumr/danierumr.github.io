@@ -4,47 +4,49 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    /* Light mode - slightly darker */
+    --background: 0 0% 96%; /* Changed from 100% to 96% - slightly off-white */
     --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
+    --card: 0 0% 98%; /* Changed from 100% to 98% */
     --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
+    --popover: 0 0% 98%; /* Changed from 100% to 98% */
     --popover-foreground: 240 10% 3.9%;
     --primary: 142 76% 36%;
     --primary-foreground: 355 100% 100%;
-    --secondary: 150 30% 96%;
+    --secondary: 150 30% 94%; /* Slightly darker */
     --secondary-foreground: 142 76% 36%;
-    --muted: 240 4.8% 95.9%;
+    --muted: 240 4.8% 92%; /* Slightly darker */
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 150 30% 96%;
+    --accent: 150 30% 94%; /* Slightly darker */
     --accent-foreground: 142 76% 36%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --border: 240 5.9% 85%; /* Slightly darker */
+    --input: 240 5.9% 85%; /* Slightly darker */
     --ring: 142 76% 36%;
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    /* Dark mode - slightly lighter */
+    --background: 240 10% 10%; /* Changed from 3.9% to 10% - lighter dark */
     --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
+    --card: 240 10% 12%; /* Changed from darker to 12% */
     --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
+    --popover: 240 10% 12%; /* Changed from darker to 12% */
     --popover-foreground: 0 0% 98%;
     --primary: 142 70% 50%;
     --primary-foreground: 144 80% 10%;
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 240 3.7% 20%; /* Lighter */
     --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
+    --muted: 240 3.7% 20%; /* Lighter */
+    --muted-foreground: 240 5% 70%; /* Lighter */
+    --accent: 240 3.7% 20%; /* Lighter */
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 240 3.7% 20%; /* Lighter */
+    --input: 240 3.7% 20%; /* Lighter */
     --ring: 142 70% 50%;
   }
 }
