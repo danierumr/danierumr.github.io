@@ -9,6 +9,7 @@ import SkillsSection from "@/components/skills-section"
 import EducationSection from "@/components/education-section"
 import ContactSection from "@/components/contact-section"
 import ProjectCard from "@/components/project-card"
+import OtherProjectsSection from "@/components/other-projects-section"
 import { useRecentProjects } from "@/data/projects"
 
 export default function HomePage() {
@@ -43,6 +44,9 @@ export default function HomePage() {
 
       {/* Education Section */}
       <EducationSection />
+
+      {/* Other Projects Section - Research and Development */}
+      {/* <OtherProjectsSection /> */}
 
       {/* Contact Section */}
       <ContactSection />

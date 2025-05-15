@@ -1,8 +1,9 @@
 export const pt = {
   // Navigation
   "nav.home": "Início",
-  "nav.projects": "Projetos",
+  "nav.projects": "Jogos",
   "nav.contact": "Contato",
+  "nav.otherProjects": "Outros Projetos",
 
   // Hero Section
   "hero.greeting": "Olá, eu sou",
@@ -50,6 +51,14 @@ export const pt = {
   "projects.features": "Características",
   "projects.back": "Voltar para projetos",
 
+  // Other Projects Section
+  "otherProjects.title": "Outros Projetos",
+  "otherProjects.description": "Além do desenvolvimento de jogos, contribuí para projetos de pesquisa e desenvolvimento de software.",
+  "otherProjects.research": "Pesquisa",
+  "otherProjects.development": "Desenvolvimento",
+  "otherProjects.viewAll": "Ver Todos",
+  "otherProjects.links": "Links & Recursos",
+
   // Projeto 1
   "project1.title": "Capybara Combat Experience - CCE",
   "project1.description": "CCE é um jogo Beat'em up ambientado em um ambiente universitário, inspirado na cultura e nos símbolos da UFV e do curso de Ciência da Computação. Desenvolvido como parte da disciplina INF 216 - Design e Implementação de Jogos Digitais, no segundo semestre de 2023, o jogo foi criado por mim, Gabriel Campos Moreira Fernandes, e Cícero Cipriano Maciel. O jogo é voltado para fãs do gênero Beat'em up e jogos clássicos de ação 2D.",
@@ -70,6 +79,30 @@ export const pt = {
   "project3.full_description": "Clamor Lycanis é um jogo atualmente em desenvolvimento, criado utilizando Unreal Engine 5 como projeto final do meu curso de Ciência da Computação. Ele combina elementos de narrativa, mecânicas de jogo e design imersivo para entregar uma experiência única.",
   "project3.features": "Primeira pessoa, Terror, Exploração",
   "project3.tech": "Unreal Engine, C++",
+
+  // Other Projects
+  // 1
+  "otherProject1.title": "Iniciação Científica - Otimização de Entregadores Ocasionais em Entregas de Última Milha",
+  "otherProject1.period": "10/2022 - 10/2023",
+  "otherProject1.shortDescription": "Este trabalho visa desenvolver um modelo eficaz para abordar o problema de roteamento de veículos, incorporando entregadores ocasionalistas, tornando-o mais alinhado com a logística do mundo real. Entregadores ocasionalistas (EOs) são definidos como clientes que retiram pedidos na loja e podem, opcionalmente, entregar para clientes próximos em seu trajeto para casa.",
+  "otherProject1.fullDescription": "",
+  "otherProject1.skills": "Python, Análise de Dados, Simulação, Roteamento de Veículos",
+  "otherProject1.link1.label": "Painel do SIA",
+  // 2
+  "otherProject2.title": "Iniciação Científica - Recomendação Automática de Exercícios de Programação Extraclasse em Ambientes de Correção Automática de Códigos",
+  "otherProject2.period": "10/2023 - 09/2024",
+  "otherProject2.shortDescription": "Customização e aprimoramento do sistema BOCA na UFV para suportar a recomendação automática de exercícios de programação. Desenvolvimento de novas funcionalidades, validação de protótipos e aplicação de técnicas de extração de dados para personalizar recomendações de exercícios.",
+  "otherProject2.fullDescription": "",
+  "otherProject2.skills": "PHP, MySQL, HTML",
+  "otherProject2.link1.label": "Video",
+  // 3
+  "otherProject3.title": "Aplicativo Calcrete",
+  "otherProject3.period": "2024",
+  "otherProject3.shortDescription": "Participei da concepção, prototipação inicial e desenvolvimento parcial do Calcrete, aplicativo mobile criado em React Native para calcular traços de concreto (ABCP/IPT), estimar custos e analisar indicadores de ecoeficiência ambiental.\nProjeto apoiado pela FAPEMIG e desenvolvido no grupo de pesquisa SICon (UFV).",
+  "otherProject3.fullDescription": "Participei da concepção, prototipação inicial e desenvolvimento parcial do Calcrete, aplicativo mobile criado em React Native para calcular traços de concreto (ABCP/IPT), estimar custos e analisar indicadores de ecoeficiência ambiental.\nProjeto apoiado pela FAPEMIG e desenvolvido no grupo de pesquisa SICon (UFV).",
+  "otherProject3.skills": "React Native, JavaScript, Design de UI/UX, Desenvolvimento Mobile",
+  "otherProject3.link1.label": "Projeto",
+  "otherProject3.link2.label": "Artigo",
 
   // Seção de Contato
   "contact.title": "Entre em Contato",
