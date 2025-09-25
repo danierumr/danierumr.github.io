@@ -16,7 +16,12 @@ export default function SkillsSection() {
     {
       title: t("skills.programming"),
       icon: <Code className="h-5 w-5" />,
-      skills: [t("skills.lang.cpp"), t("skills.lang.csharp"), t("skills.lang.gd")],
+      skills: [t("skills.lang.cpp"), t("skills.lang.csharp"), t("skills.lang.gd"), t("skills.lang.js"), t("skills.lang.py")],
+    },
+    {
+      title: t("skills.tools"),
+      icon: <Code className="h-5 w-5" />,
+      skills: [t("skills.tool.git"), t("skills.tool.perforce")],
     },
     // {
     //   title: t("skills.design"),

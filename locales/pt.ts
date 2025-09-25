@@ -19,16 +19,6 @@ export const pt = {
   "skills.programming": "Programação",
   "skills.design": "Design de Jogos",
   "skills.art": "Modelagem 3D & Animação",
-  "skills.engine.unity": "Unity Engine",
-  "skills.engine.unreal": "Unreal Engine",
-  "skills.engine.godot": "Godot Engine",
-  "skills.lang.csharp": "C#",
-  "skills.lang.cpp": "C++",
-  "skills.lang.gd": "GDScript",
-  "skills.lang.js": "JavaScript",
-  "skills.tools.blender": "Blender",
-  "skills.tools.photoshop": "Photoshop",
-  "skills.tools.git": "Git",
 
   // Seção de Educação
   "education.title": "Educação",

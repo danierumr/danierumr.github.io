@@ -19,16 +19,21 @@ export const en = {
   "skills.programming": "Programming",
   "skills.design": "Game Design",
   "skills.art": "3D Modeling & Animation",
-  "skills.engine.unity": "Unity Engine",
+  "skills.engine.unity": "Unity",
   "skills.engine.unreal": "Unreal Engine",
-  "skills.engine.godot": "Godot Engine",
+  "skills.engine.godot": "Godot",
+
   "skills.lang.csharp": "C#",
   "skills.lang.cpp": "C++",
   "skills.lang.gd": "GDScript",
   "skills.lang.js": "JavaScript",
-  "skills.tools.blender": "Blender",
-  "skills.tools.photoshop": "Photoshop",
-  "skills.tools.git": "Git",
+  "skills.lang.py": "Python",
+  
+  "skills.tools" : "Tools",
+  "skills.tool.blender": "Blender",
+  "skills.tool.photoshop": "Photoshop",
+  "skills.tool.git": "Git",
+  "skills.tool.perforce": "Perforce",
 
   // Education Section
   "education.title": "Education",
