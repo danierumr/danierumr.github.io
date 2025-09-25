@@ -4,6 +4,7 @@ export const pt = {
   "nav.projects": "Jogos",
   "nav.contact": "Contato",
   "nav.otherProjects": "Outros Projetos",
+  "nav.devlog": "DevLog",
 
   // Hero Section
   "hero.greeting": "Olá, eu sou",
@@ -103,6 +104,13 @@ export const pt = {
   "otherProject3.skills": "React Native, JavaScript, Design de UI/UX, Desenvolvimento Mobile",
   "otherProject3.link1.label": "Projeto",
   "otherProject3.link2.label": "Artigo",
+  // 4
+  "otherProject4.title": "Computação Gráfica - Lab",
+  "otherProject4.period": "08/2025 - XX/XXXX",
+  "otherProject4.shortDescription": "Este repositório contém meus experimentos pessoais e códigos de prática enquanto aprendo Computação Gráfica, seguindo os tutoriais do LearnOpenGL e recursos relacionados. O objetivo é explorar técnicas de renderização, praticar OpenGL moderno e construir uma compreensão mais profunda dos conceitos de computação gráfica.",
+  "otherProject4.fullDescription": "Este repositório contém meus experimentos pessoais e códigos de prática enquanto aprendo Computação Gráfica, seguindo os tutoriais do LearnOpenGL e recursos relacionados. O objetivo é explorar técnicas de renderização, praticar OpenGL moderno e construir uma compreensão mais profunda dos conceitos de computação gráfica.",
+  "otherProject4.skills": "OpenGL, GLFW, C++, Computer Graphics",
+  "otherProject4.link1.label": "Project",
 
   // Seção de Contato
   "contact.title": "Entre em Contato",

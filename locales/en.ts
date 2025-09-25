@@ -4,6 +4,7 @@ export const en = {
   "nav.projects": "Games",
   "nav.contact": "Contact",
   "nav.otherProjects": "Other Projects",
+  "nav.devlog": "DevLog",
 
   // Hero Section
   "hero.greeting": "Hello, I'm",
@@ -104,6 +105,13 @@ export const en = {
   "otherProject3.skills": "React Native, JavaScript, HTML, UI/UX Design, Mobile Development",
   "otherProject3.link1.label": "Project (Portuguese)",
   "otherProject3.link2.label": "Article (Portuguese)",
+  // 4
+  "otherProject4.title": "Computer Graphics - Lab",
+  "otherProject4.period": "08/2025 - XX/XXXX",
+  "otherProject4.shortDescription": "This repository contains my personal experiments and practice code while learning Computer Graphics, following the LearnOpenGL tutorials and related resources. The goal is to explore rendering techniques, practice modern OpenGL, and build a deeper understanding of computer graphics concepts.",
+  "otherProject4.fullDescription": "This repository contains my personal experiments and practice code while learning Computer Graphics, following the LearnOpenGL tutorials and related resources. The goal is to explore rendering techniques, practice modern OpenGL, and build a deeper understanding of computer graphics concepts.",
+  "otherProject4.skills": "OpenGL, GLFW, C++, Computer Graphics",
+  "otherProject4.link1.label": "Project",
 
   // Contact Section
   "contact.title": "Get In Touch",

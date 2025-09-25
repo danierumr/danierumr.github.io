@@ -22,6 +22,7 @@ export default function Header() {
     { href: "/projects", label: t("nav.projects") },
     { href: "/other-projects", label: t("nav.otherProjects") },
     { href: "/#contact", label: t("nav.contact") },
+    { href: "/devlog", label: t("nav.devlog") },
   ]
 
   return (

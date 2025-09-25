@@ -8,6 +8,7 @@ import type { ReactNode } from "react"
 export type OtherProjectType = "research" | "development"
 
 export type OtherProject = {
+  order: number
   id: string
   type: OtherProjectType
   title: string
@@ -28,6 +29,7 @@ export function useOtherProjects() {
   // Other projects data with translations
   const otherProjects: OtherProject[] = [
     {
+      order: 0,
       id: "research-optimization",
       type: "research",
       title: t("otherProject1.title"),
@@ -40,6 +42,7 @@ export function useOtherProjects() {
       ],
     },
     {
+      order: 0,
       id: "research-boca",
       type: "research",
       title: t("otherProject2.title"),
@@ -52,6 +55,7 @@ export function useOtherProjects() {
       ],
     },
     {
+      order: 1,
       id: "concrete-calculator",
       type: "development",
       title: t("otherProject3.title"),
@@ -64,6 +68,19 @@ export function useOtherProjects() {
         { label: t("otherProject3.link2.label"), url: "https://abenge.org.br/sis_artigo_com_capa.php/?cod_trab=5009" },
       ],
     },
+    {
+      order: 0,
+      id: "cg-lab",
+      type: "development",
+      title: t("otherProject4.title"),
+      period: t("otherProject4.period"),
+      shortDescription: t("otherProject4.shortDescription"),
+      fullDescription: t("otherProject4.fullDescription"),
+      skills: t("otherProject4.skills").split(", "),
+      links: [
+        { label: t("otherProject4.link1.label"), url: "https://github.com/danierumr/Computer-Graphics-Lab" },
+      ],
+    },
   ]
 
   return otherProjects
@@ -72,7 +89,9 @@ export function useOtherProjects() {
 // Function to get projects by type
 export function useOtherProjectsByType(type: OtherProjectType) {
   const projects = useOtherProjects()
-  return projects.filter((project) => project.type === type)
+  return projects
+      .filter((project) => project.type === type)
+      .sort((a, b) => a.order - b.order)
 }
 
 // Function to get a specific project by ID
