@@ -8,7 +8,7 @@ import { useLanguage } from "@/components/language-provider"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ArrowLeft, ExternalLink, Calendar, Code, Users, Trophy } from "lucide-react"
+import { ArrowLeft, ExternalLink, Calendar, Code, Users, Trophy, ChevronLeft, ChevronRight } from "lucide-react"
 import { useProject } from "@/data/projects"
 
 export default function ProjectPage() {
@@ -16,12 +16,28 @@ export default function ProjectPage() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [loading, setLoading] = useState(true)
+  const [selectedIndex, setSelectedIndex] = useState(0)
 
   // Get project ID from query parameter
   const projectId = searchParams.get("id")
 
   // Use the hook at the top level of the component
   const project = useProject(projectId)
+
+  // Reset selected image when project changes
+  useEffect(() => {
+    setSelectedIndex(0)
+  }, [projectId, project?.images?.length])
+
+  const prevImage = () => {
+    if (!project || !project.images?.length) return
+    setSelectedIndex((i) => (i - 1 + project.images.length) % project.images.length)
+  }
+
+  const nextImage = () => {
+    if (!project || !project.images?.length) return
+    setSelectedIndex((i) => (i + 1) % project.images.length)
+  }
 
   useEffect(() => {
     // Simulate loading for a smoother experience
@@ -70,27 +86,48 @@ export default function ProjectPage() {
 
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          <div className="relative aspect-video overflow-hidden rounded-lg border border-border/40 shadow-sm">
+          <div className="relative h-[360px] md:h-[480px] w-full overflow-hidden rounded-lg border border-border/40 shadow-sm">
             <Image
-              src={project.images[0] || "/placeholder.svg"}
+              src={project.images[selectedIndex] || "/placeholder.svg"}
               alt={project.title}
               fill
               className="object-contain"
               priority
             />
+
+            <button
+              aria-label="Previous image"
+              onClick={prevImage}
+              className="absolute left-2 top-1/2 -translate-y-1/2 z-20 rounded-md bg-muted/60 p-1 text-muted-foreground hover:bg-muted"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+
+            <button
+              aria-label="Next image"
+              onClick={nextImage}
+              className="absolute right-2 top-1/2 -translate-y-1/2 z-20 rounded-md bg-muted/60 p-1 text-muted-foreground hover:bg-muted"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
           </div>
 
-          <div className="mt-4 grid grid-cols-3 gap-4">
-            {project.images.slice(1).map((image: string, index: number) => (
+          <div className="mt-4 flex gap-4 overflow-x-auto overflow-y-hidden flex-nowrap items-center">
+            {project.images.map((image: string, index: number) => (
               <div
                 key={index}
-                className="relative aspect-video overflow-hidden rounded-lg border border-border/40 shadow-sm"
+                onClick={() => setSelectedIndex(index)}
+                className={`relative h-[84px] md:h-[120px] w-[160px] md:w-[240px] flex-shrink-0 overflow-hidden rounded-lg shadow-sm cursor-pointer transition-all ${
+                  selectedIndex === index ? "border-2 border-primary scale-105" : "border border-border/40"
+                }`}
               >
                 <Image
                   src={image || "/placeholder.svg"}
-                  alt={`${project.title} screenshot ${index + 2}`}
-                  fill
-                  className="object-contain"
+                  alt={`${project.title} screenshot ${index + 1}`}
+                  width={240}
+                  height={120}
+                  style={{ objectFit: 'contain' }}
+                  className="w-full h-full"
                 />
               </div>
             ))}
