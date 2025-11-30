@@ -4,6 +4,7 @@ export const en = {
   "nav.projects": "Games",
   "nav.contact": "Contact",
   "nav.otherProjects": "Other Projects",
+  "nav.devlog": "DevLog",
 
   // Hero Section
   "hero.greeting": "Hello, I'm",
@@ -18,16 +19,21 @@ export const en = {
   "skills.programming": "Programming",
   "skills.design": "Game Design",
   "skills.art": "3D Modeling & Animation",
-  "skills.engine.unity": "Unity Engine",
+  "skills.engine.unity": "Unity",
   "skills.engine.unreal": "Unreal Engine",
-  "skills.engine.godot": "Godot Engine",
+  "skills.engine.godot": "Godot",
+
   "skills.lang.csharp": "C#",
   "skills.lang.cpp": "C++",
   "skills.lang.gd": "GDScript",
   "skills.lang.js": "JavaScript",
-  "skills.tools.blender": "Blender",
-  "skills.tools.photoshop": "Photoshop",
-  "skills.tools.git": "Git",
+  "skills.lang.py": "Python",
+  
+  "skills.tools" : "Tools",
+  "skills.tool.blender": "Blender",
+  "skills.tool.photoshop": "Photoshop",
+  "skills.tool.git": "Git",
+  "skills.tool.perforce": "Perforce",
 
   // Education Section
   "education.title": "Education",
@@ -104,6 +110,13 @@ export const en = {
   "otherProject3.skills": "React Native, JavaScript, HTML, UI/UX Design, Mobile Development",
   "otherProject3.link1.label": "Project (Portuguese)",
   "otherProject3.link2.label": "Article (Portuguese)",
+  // 4
+  "otherProject4.title": "Computer Graphics - Lab",
+  "otherProject4.period": "08/2025 - XX/XXXX",
+  "otherProject4.shortDescription": "This repository contains my personal experiments and practice code while learning Computer Graphics, following the LearnOpenGL tutorials and related resources. The goal is to explore rendering techniques, practice modern OpenGL, and build a deeper understanding of computer graphics concepts.",
+  "otherProject4.fullDescription": "This repository contains my personal experiments and practice code while learning Computer Graphics, following the LearnOpenGL tutorials and related resources. The goal is to explore rendering techniques, practice modern OpenGL, and build a deeper understanding of computer graphics concepts.",
+  "otherProject4.skills": "OpenGL, GLFW, C++, Computer Graphics",
+  "otherProject4.link1.label": "Project",
 
   // Contact Section
   "contact.title": "Get In Touch",
