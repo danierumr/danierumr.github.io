@@ -8,9 +8,9 @@ export const pt = {
 
   // Hero Section
   "hero.greeting": "Olá, eu sou",
-  "hero.title": "Desenvolvedor de Jogos",
+  "hero.title": "Engenheiro de Build & Release",
   "hero.description":
-    "Sou estudante de Ciência da Computação na UFV, atualmente na fase final da minha graduação. Como parte do meu Trabalho de Conclusão de Curso (TCC), estou desenvolvendo um jogo na Unreal Engine 5, aplicando conhecimentos de diversas áreas que explorei durante meus estudos, como engenharia de software, desenvolvimento de jogos e inteligência artificial. Sou apaixonado por desenvolvimento de jogos e estou sempre buscando aprender e experimentar novas tecnologias. Com uma base sólida em programação e resolução de problemas, estou animado com os desafios e oportunidades na indústria de games.",
+    "Sou Estagiário de Build & Release na Gamebreaking Studios, com foco em automação de builds, CI/CD e pipelines de release. Também desenvolvo jogos indie no meu tempo livre. Este portfólio apresenta meus projetos e meu trabalho de engenharia. Siga-me nas redes sociais para novidades.",
   "hero.cta": "Ver Meu Trabalho",
 
   // Skills Section

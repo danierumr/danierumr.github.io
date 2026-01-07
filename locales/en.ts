@@ -8,9 +8,10 @@ export const en = {
 
   // Hero Section
   "hero.greeting": "Hello, I'm",
-  "hero.title": "Game Developer",
+  "hero.title": "Build & Release Engineer",
   "hero.description":
-    "I am a Computer Science student at UFV, currently in the final stages of my degree. As part of my final project, I am developing a game in Unreal Engine 5, applying knowledge from different areas I explored during my studies, such as software engineering, game development, and artificial intelligence. I am passionate about game development and always eager to learn and experiment with new technologies. With a strong foundation in programming and problem-solving, I am excited about the challenges and opportunities in the gaming industry.",
+    "I'm a Build & Release Engineer Intern at Gamebreaking Studios, focusing on build automation, CI/CD, and release pipelines. I also make indie games in my free time. This portfolio showcases my projects and engineering work. Follow me on social media for updates.",
+    //"I am a Computer Science student at UFV, currently in the final stages of my degree. As part of my final project, I am developing a game in Unreal Engine 5, applying knowledge from different areas I explored during my studies, such as software engineering, game development, and artificial intelligence. I am passionate about game development and always eager to learn and experiment with new technologies. With a strong foundation in programming and problem-solving, I am excited about the challenges and opportunities in the gaming industry.",
   "hero.cta": "View My Work",
 
   // Skills Section
