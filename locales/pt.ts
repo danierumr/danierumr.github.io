@@ -10,8 +10,19 @@ export const pt = {
   "hero.greeting": "Olá, eu sou",
   "hero.title": "Engenheiro de Build & Release",
   "hero.description":
-    "Sou Estagiário de Build & Release na Gamebreaking Studios, com foco em automação de builds, CI/CD e pipelines de release. Também desenvolvo jogos indie no meu tempo livre. Este portfólio apresenta meus projetos e meu trabalho de engenharia. Siga-me nas redes sociais para novidades.",
+    "Comecei minha trajetória na Gamebreaking Studios como estagiário em janeiro e evoluí para Engenheiro Build & Release Júnior. Trabalho com automação de builds, CI/CD e fluxos de release, além de criar meus próprios projetos de jogos no tempo livre. Tenho interesse especial em pipelines confiáveis, processos de deploy mais suaves e transformar ideias em experiências bem acabadas para o jogador.",
   "hero.cta": "Ver Meu Trabalho",
+
+  // Experience Section
+  "experience.title": "Experiência",
+  "experience.subtitle": "Minha trajetória de estagiário a engenheiro júnior",
+  "experience.company": "Gamebreaking Studios",
+  "experience.role": "Estagiário → Engenheiro Build & Release Júnior",
+  "experience.description": "Comecei na Gamebreaking Studios como estagiário em janeiro e, desde então, evoluí para um papel júnior, contribuindo para fluxos de engenharia que apoiam o desenvolvimento e as entregas.",
+  "experience.highlight1": "Ajudei a melhorar processos de build e release com foco em confiabilidade e velocidade.",
+  "experience.highlight2": "Trabalhei com práticas de CI/CD para apoiar entregas mais suaves ao longo dos projetos.",
+  "experience.highlight3": "Ganhei experiência em automação, colaboração e engenharia orientada à produção.",
+  "experience.timeline": "Comecei como estagiário em janeiro e avancei para júnior este ano",
 
   // Skills Section
   "skills.title": "Habilidades",

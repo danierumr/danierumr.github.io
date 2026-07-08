@@ -5,6 +5,7 @@ import { useLanguage } from "@/components/language-provider"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import HeroSection from "@/components/hero-section"
+import ExperienceSection from "@/components/experience-section"
 import SkillsSection from "@/components/skills-section"
 import EducationSection from "@/components/education-section"
 import ContactSection from "@/components/contact-section"
@@ -38,6 +39,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Experience Section */}
+      <ExperienceSection />
 
       {/* Skills Section */}
       <SkillsSection />

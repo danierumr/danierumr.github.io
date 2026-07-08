@@ -10,9 +10,22 @@ export const en = {
   "hero.greeting": "Hello, I'm",
   "hero.title": "Build & Release Engineer",
   "hero.description":
-    "I'm a Build & Release Engineer Intern at Gamebreaking Studios, focusing on build automation, CI/CD, and release pipelines. I also make indie games in my free time. This portfolio showcases my projects and engineering work. Follow me on social media for updates.",
+    "I started my journey at Gamebreaking Studios as an intern in January and have grown into a Junior Build & Release Engineer. I work on build automation, CI/CD, and release workflows while also creating my own game projects in my free time. I’m especially interested in reliable pipelines, smooth deployment processes, and turning ideas into polished player experiences.",
+    // "Im a Junior Build & Release Engineer at Gamebreaking Studios. WOrking at/on BespokeCI. Focusing on build automation, CI/CD, releases. Doing stuff there... Also making my own games, planning on remaking Clamor Lycanis and turning into an actual full game. Also working in another game made in unity, a rogue-lite game. Follow me on social media for updates.",
+    //"I'm a Junior Build & Release Engineer at Gamebreaking Studios, focusing on build automation, CI/CD, and release pipelines. I also make indie games in my free time. This portfolio showcases my projects and engineering work. Follow me on social media for updates.",
     //"I am a Computer Science student at UFV, currently in the final stages of my degree. As part of my final project, I am developing a game in Unreal Engine 5, applying knowledge from different areas I explored during my studies, such as software engineering, game development, and artificial intelligence. I am passionate about game development and always eager to learn and experiment with new technologies. With a strong foundation in programming and problem-solving, I am excited about the challenges and opportunities in the gaming industry.",
   "hero.cta": "View My Work",
+
+  // Experience Section
+  "experience.title": "Experience",
+  "experience.subtitle": "My path from intern to junior engineer",
+  "experience.company": "Gamebreaking Studios",
+  "experience.role": "Intern → Junior Build & Release Engineer",
+  "experience.description": "I began at Gamebreaking Studios as an intern in January and have since progressed into a junior role, contributing to engineering workflows that support development and release operations.",
+  "experience.highlight1": "Helped improve build and release processes with a focus on reliability and speed.",
+  "experience.highlight2": "Worked with CI/CD practices to support smoother delivery across projects.",
+  "experience.highlight3": "Built experience in automation, collaboration, and production-focused engineering.",
+  "experience.timeline": "Started as an intern in January and advanced to junior this year",
 
   // Skills Section
   "skills.title": "Skills",
