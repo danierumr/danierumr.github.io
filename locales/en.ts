@@ -10,10 +10,18 @@ export const en = {
   "hero.greeting": "Hello, I'm",
   "hero.title": "Build & Release Engineer",
   "hero.description":
-    "I started my journey at Gamebreaking Studios as an intern in January and have grown into a Junior Build & Release Engineer. I work on build automation, CI/CD, and release workflows while also creating my own game projects in my free time. I’m especially interested in reliable pipelines, smooth deployment processes, and turning ideas into polished player experiences.",
+    "I started my journey at Gamebreaking Studios as an intern in January and have grown into a Junior Build & Release Engineer. I work on build automation, CI/CD, and release workflows while also creating my own game projects in my free time. I'm especially interested in reliable pipelines, smooth deployment processes, and turning ideas into polished player experiences.",
     // "Im a Junior Build & Release Engineer at Gamebreaking Studios. WOrking at/on BespokeCI. Focusing on build automation, CI/CD, releases. Doing stuff there... Also making my own games, planning on remaking Clamor Lycanis and turning into an actual full game. Also working in another game made in unity, a rogue-lite game. Follow me on social media for updates.",
     //"I'm a Junior Build & Release Engineer at Gamebreaking Studios, focusing on build automation, CI/CD, and release pipelines. I also make indie games in my free time. This portfolio showcases my projects and engineering work. Follow me on social media for updates.",
     //"I am a Computer Science student at UFV, currently in the final stages of my degree. As part of my final project, I am developing a game in Unreal Engine 5, applying knowledge from different areas I explored during my studies, such as software engineering, game development, and artificial intelligence. I am passionate about game development and always eager to learn and experiment with new technologies. With a strong foundation in programming and problem-solving, I am excited about the challenges and opportunities in the gaming industry.",
+    /*
+    Some info I'm putting here, giving just some more context for me:
+    - I am a Build and Release Enginner at GBS.
+    - Work more specifically in the BespokeCI product/service? 
+    - Developing and maintaning build and release pipelines for game dev projects.
+    - I also make my own games in my free time. Working on two major projects: Clamor Lycanis (UE) and a new game on unity rogue-lite (some elements...at least)
+    - I love coding, developing, creating, solving, learning. New tech, new ideas, games, mechanics, solve problems optmize...
+    */
   "hero.cta": "View My Work",
 
   // Experience Section
