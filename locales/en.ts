@@ -40,11 +40,12 @@ export const en = {
   "education.title": "Education",
   "education.degree": "Bachelor's Degree in Computer Science",
   "education.university": "Universidade Federal de Viçosa - UFV",
+  "education.description": "Graduated with Honors (Silver Medal Presidente Bernades)", 
   "education.period": "2021 - 2025",
   "education.course1": "Game Development Specialization",
   "education.course2": "3D Animation Certificate",
   "education.course3": "Advanced Game Design Workshop",
-  "education.certifications": "Cartifications",
+  "education.certifications": "Certifications",
 
   // Projects Section
   "projects.title": "Recent Projects",

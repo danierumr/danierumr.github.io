@@ -39,6 +39,9 @@ export default function EducationSection() {
           </CardHeader>
           <CardContent>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <p className="text-sm leading-6 text-muted-foreground">{t("education.description")}</p>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Calendar className="h-4 w-4" />
               <span>{t("education.period")}</span>
             </div>

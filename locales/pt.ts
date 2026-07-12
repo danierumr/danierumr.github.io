@@ -39,6 +39,7 @@ export const pt = {
   "education.title": "Educação",
   "education.degree": "Bacharelado em Ciência da Computação",
   "education.university": "Universidade Federal de Viçosa - UFV",
+  "education.description": "Graduado com Honras (Medalha de Prata Presidente Bernades)", 
   "education.period": "2021 - 2025",
   "education.course1": "Especialização em Desenvolvimento de Jogos",
   "education.course2": "Certificado em Animação 3D",
