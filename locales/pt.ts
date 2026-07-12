@@ -10,26 +10,30 @@ export const pt = {
   "hero.greeting": "Olá, eu sou",
   "hero.title": "Engenheiro de Build & Release",
   "hero.description":
-    "Comecei minha trajetória na Gamebreaking Studios como estagiário em janeiro e evoluí para Engenheiro Build & Release Júnior. Trabalho com automação de builds, CI/CD e fluxos de release, além de criar meus próprios projetos de jogos no tempo livre. Tenho interesse especial em pipelines confiáveis, processos de deploy mais suaves e transformar ideias em experiências bem acabadas para o jogador.",
+    "Atuo como Engenheiro de Build & Release na Gamebreaking Studios, onde desenvolvo e mantenho a infraestrutura, automação e pipelines de CI/CD que sustentam o desenvolvimento de jogos. Fora do trabalho, crio jogos e exploro gráficos, programação de engine e ferramentas de desenvolvimento. Gosto de resolver problemas técnicos complexos, projetar sistemas confiáveis e aprender continuamente como as coisas funcionam por trás das cortinas.",
   "hero.cta": "Ver Meu Trabalho",
 
   // Experience Section
   "experience.title": "Experiência",
-  "experience.subtitle": "Minha trajetória de estagiário a engenheiro júnior",
+  "experience.subtitle": "Construindo infraestrutura confiável para o desenvolvimento de jogos",
   "experience.company": "Gamebreaking Studios",
   "experience.role": "Estagiário → Engenheiro Build & Release Júnior",
-  "experience.description": "Comecei na Gamebreaking Studios como estagiário em janeiro e, desde então, evoluí para um papel júnior, contribuindo para fluxos de engenharia que apoiam o desenvolvimento e as entregas.",
-  "experience.highlight1": "Ajudei a melhorar processos de build e release com foco em confiabilidade e velocidade.",
-  "experience.highlight2": "Trabalhei com práticas de CI/CD para apoiar entregas mais suaves ao longo dos projetos.",
-  "experience.highlight3": "Ganhei experiência em automação, colaboração e engenharia orientada à produção.",
-  "experience.timeline": "Comecei como estagiário em janeiro e avancei para júnior este ano",
+  "experience.description": "Entrei na Gamebreaking Studios como estagiário em Engenharia de Build & Release e fui promovido para Engenheiro Build & Release Júnior. Trabalho com o BespokeCI, desenvolvendo e mantendo a infraestrutura de build, automação e pipelines de release que apoiam as equipes de desenvolvimento de jogos.",
+  "experience.highlight1": "Desenvolvo automação de build, pipelines de CI/CD e fluxos de release para projetos de desenvolvimento de jogos.",
+  "experience.highlight2": "Trabalho com Jenkins, Perforce, Git, AWS, Terraform, Ansible e ferramentas internas para melhorar a confiabilidade e os fluxos de trabalho dos desenvolvedores.",
+  "experience.highlight3": "Investigo problemas em produção, otimizando processos de engenharia e colaborando com diferentes times para entregar uma infraestrutura de desenvolvimento mais confiável.",
+  "experience.timeline": "Estagiário (01/2026) → Júnior (06/2026)",
 
-  // Skills Section
-  "skills.title": "Habilidades",
-  "skills.gamedev": "Desenvolvimento de Jogos",
-  "skills.programming": "Programação",
-  "skills.design": "Design de Jogos",
-  "skills.art": "Modelagem 3D & Animação",
+  // Areas I Work With Section
+  "areas.title": "Áreas em que Trabalho",
+  "areas.build.title": "Engenharia de Build & Release",
+  "areas.build.description": "Desenvolvendo automação de build, pipelines de CI/CD, fluxos de release e infraestrutura para desenvolvimento de games.",
+  "areas.game.title": "Desenvolvimento de Jogos",
+  "areas.game.description": "Criando jogos pessoais enquanto exploro sistemas de gameplay, programação de engine e arquitetura de software.",
+  "areas.software.title": "Engenharia de Software",
+  "areas.software.description": "Projetando aplicações, automação e ferramentas com foco em manutenibilidade e resolução de problemas.",
+  "areas.graphics.title": "Computação Gráfica",
+  "areas.graphics.description": "Aprendendo técnicas modernas de renderização e programação gráfica por meio de projetos e experimentos pessoais.",
 
   // Seção de Educação
   "education.title": "Educação",
@@ -43,10 +47,11 @@ export const pt = {
 
   // Seção de Projetos
   "projects.title": "Projetos Recentes",
+  "projects.featured": "Projetos em Destaque",
   "projects.viewAll": "Ver Todos os Projetos",
   "projects.viewDetails": "Ver Detalhes",
   "projects.visitProject": "Visitar Projeto",
-  "projects.showcase": "Uma vitrine dos meus projetos de desenvolvimento de jogos ao longo dos anos.",
+  "projects.showcase": "Uma seleção dos meus projetos de desenvolvimento de jogos ao longo do tempo.",
   "projects.teamsize": "Tamanho da equipe",
   "projects.achievements": "Conquistas",
   "projects.description": "Descrição",
@@ -115,7 +120,7 @@ export const pt = {
 
   // Seção de Contato
   "contact.title": "Entre em Contato",
-  "contact.description": "Interessado em trabalhar comigo? Sinta-se à vontade para entrar em contato!",
+  "contact.description": "Se você quiser conversar sobre engenharia de build, desenvolvimento de jogos, projetos open source ou simplesmente trocar ideias sobre tecnologia, fique à vontade para entrar em contato.",
   "contact.email": "Email",
   "contact.social": "Redes Sociais",
   "contact.connectwithme": "Conecte-se comigo nas redes sociais",
